@@ -1,2 +1,3 @@
-# whisper-convert
-A simple utility script to transcribe various audio file formats to text using Whisper
+This is a simple utility script to transcribe various audio file formats to text using Whisper. A batch script is included for convenience: Just download an audio file and launch the script. When launched, it looks for audio files in its directory and the Downloads folder, skipping files that have already been transcribed. The outputs are displayed in the console, and additionally saved as individual and combined text files. 
+
+The `whisper` and `os` packages are required by the script. Adjust the `whisper.load_model("large")` line to use a different model if desired.
